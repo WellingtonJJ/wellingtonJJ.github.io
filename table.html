@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>HelpCademy | Ajudando o Futuro</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link href="css/estilo.css" rel="stylesheet">
+
+    <!-- Fontes -->
+    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+    
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+
+    <!-- JavaScript do Bootstrap -->
+    <script src="js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <!-- Menu -->
+    <a id="menu-toggle" href="#" class="btn botao-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+    <nav id="sidebar-wrapper">
+        <ul class="sidebar-nav">
+            <a id="menu-close" href="#" class="btn botao-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+            <li class="sidebar-brand">
+                <a href="#top" onclick=$("#menu-close").click();>MENU</a>
+            </li>
+            <li>
+                <a href="index.html" onclick=$("#menu-close").click();>Home</a>
+            </li>
+            <li>
+                <a href="cadajuda.html" onclick=$("#menu-close").click();>Cadastre Universidade</a>
+            </li>
+            <li>
+                <a href="universidades.html" onclick=$("#menu-close").click();>Encontre Universidades</a>
+            </li>
+            <li>
+                <a href="sobre.html" onclick=$("#menu-close").click();>Sobre Nós</a>
+            </li>
+            <li>
+                <a href="faleconosco.html" onclick=$("#menu-close").click();>Fale Conosco</a>
+            </li>
+        </ul>
+    </nav>
+	<section class="tabela">
+<table class="table table-bordered" width="900px" height="700px">
+
+
+	<tr>
+		<td colspan="2" align = "center" ><h3>Dados do Responsavel</h3></td>
+	</tr>
+	<tr>
+		<td width="50%"><b>Nome: Pedro</b></td>
+		<td><b>Sobrenome: Silva </b></td> 
+	</tr>
+	<tr>
+		<td><b>Idade: 22</b></td>
+		<td><b>Email: pedrosilva@gmail.com</b></td>
+	</tr>
+	<tr>
+		<td><b>Telefone: (21) - 2999-9999</b></td>
+		<td><b>Celular: (21) - 99999-9999</b></td>
+	</tr>
+	<tr>
+		<td colspan="2" align ="center"><h3>Dados da instituicao</h3></td>
+	</tr>
+	<tr>
+		<td><b>Nome: Universidade Federal Fluminense</b></td>
+		<td><b>Sigla: UFF</b></td>
+	</tr>
+	<tr>
+		<td><b>Localizacao: Rua Sao Jose, 13 - Rio de Janeiro, RJ</b></td>
+		<td><b>Aberto de: --:-- Ate: --:--</b></td>
+	</tr>
+	<tr>
+		<td rowspan="3"><b>A instituicao precisa de: Pintura, Reboco, etc. </b></td>
+	</tr>
+
+
+</table>
+
+</section >
+<!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>HelpCademy</strong>
+                    </h4>
+                    <p>Av. Rio Branco
+                        <br>Rio de Janeiro - RJ, 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (021) 96690-8001</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:helpcademy@gmail.com">helpcademy@gmail.com</a>
+                        </li>
+                    </ul>
+                    <br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; HelpCademy 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script>
+    // Fecha o Menu
+    $("#menu-close").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    // Abre o Menu
+    $("#menu-toggle").click(function(e) {
+        e.preventDefault();
+        $("#sidebar-wrapper").toggleClass("active");
+    });
+    </script>
+
+</body>
+
+</html>

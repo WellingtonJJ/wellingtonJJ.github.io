@@ -1,0 +1,290 @@
+<!Doctype html>
+<html lang="pt-br">
+	<head>
+	
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Cadastro de Instituição | HelpCademy, Ajudando o Futuro</title>
+
+        <!-- Bootstrap -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- CSS -->
+        <link href="css/estilo.css" rel="stylesheet">
+		<script src="jquery/jquery-1.11.2.js" type="text/javascript"></script>
+        <!-- Fontes -->
+        <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
+		
+		
+		<script src="jquery/digitalBush-jquery.maskedinput-9672630/src/jquery.maskedinput.js" type="text/javascript"></script>
+        <!-- jQuery -->
+		<script src="jquery/jquery.validation/jquery.validate.js" type="text/javascript"></script>
+
+        <!-- JavaScript do Bootstrap -->
+        <script src="devweb2.js"></script>
+
+	</head>
+    
+	<body>
+
+        <!-- Menu -->
+        <a id="menu-toggle" href="#" class="btn botao-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
+        <nav id="sidebar-wrapper">
+            <ul class="sidebar-nav">
+                <a id="menu-close" href="#" class="btn botao-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
+                <li class="sidebar-brand">
+                    <a href="#top" onclick=$("#menu-close").click();>MENU</a>
+                </li>
+                <li>
+                    <a href="index.html" onclick=$("#menu-close").click();>Home</a>
+                </li>
+                <li>
+                    <a href="cadajuda.html" onclick=$("#menu-close").click();>Cadastre Universidade</a>
+                </li>
+                <li>
+                    <a href="universidades.html" onclick=$("#menu-close").click();>Encontre Universidades</a>
+                </li>
+                <li>
+                    <a href="sobre.html" onclick=$("#menu-close").click();>Sobre Nós</a>
+                </li>
+                <li>
+                    <a href="faleconosco.html" onclick=$("#menu-close").click();>Fale Conosco</a>
+                </li>
+            </ul>
+        </nav>
+			<!--COMEÇO CONTEÚDO-->
+			<section class="container">
+
+                <div class="row">
+                    <div class="col-xs-12 col-sm-10 col-md-8 col-sm-offset-4 col-md-offset-2">
+                        <form id="formajuda" class="form cadastro">
+                            <h1>Cadastre sua Instituição</h1>
+                            </br>
+                            <fieldset id="recebeajuda">
+                                <legend><strong>Dados do Responsável</strong></legend>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Nome</label>
+                                            <input type="text" name="nome" id="nome" class="form-control input-lg" placeholder="Nome" tabindex="1" onblur="validarTamanhoNome()">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Sobrenome</label>
+                                            <input required size="50" maxlength = "40" type="text" name="sobrenome" id="sobrenome" class="form-control input-lg" placeholder="Sobrenome" tabindex="2">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <label>Idade</label>
+                                    <input required size="4" maxlength = "3"   type="tel" name="idade" id="idade" class="form-control input-lg" pattern = "[0-9]{3}"type="tel" placeholder="Idade" tabindex="3">
+                                </div>
+                                <div class="form-group">
+                                    <label>E-mail</label>
+                                    <input required size="40" maxlength ="30" type="email" name="email" id="email" class="form-control input-lg" tabindex="4" placeholder="seuemail@dominio.com" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <label>Telefone Fixo</label>
+                                        <div class="form-group">
+                                            <input required size="15" maxlength="14" type="tel" name="telpf" id="telpf" class="form-control input-lg" placeholder="(00)0000-0000" tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Celular</label>
+                                            <input required size="15" maxlength="15" type="tel" name="telpf2" id="telpf2" class="form-control input-lg" placeholder="(00)00000-0000" tabindex="6">
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </fildset>
+                            <br>
+                            <fieldset id="dadosinstituicao" >
+                                <legend><strong>Dados da instituicao</strong></legend>
+
+                                <div class="row">
+                                    <div class="col-xs-14 col-sm-8 col-md-8">
+                                        <div class="form-group">
+                                            <label>Nome da Instituição</label>
+                                            <input required size="80" maxlength="50" type="text" name="instituicao" id="instituicao" class="form-control input-lg" placeholder="Universidade Federal Fluminense" tabindex="7">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-8 col-sm-4 col-md-4">
+                                        <div class="form-group">
+                                            <label>Sigla da Instituição</label>
+                                            <input required  size="7" maxlength="6" type="text" name="sigla" id="sigla" class="form-control input-lg" placeholder="UFF" tabindex="8">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <label>Telefone Fixo da Instituição</label>
+                                        <div class="form-group">
+                                            <input required size="15" maxlength="14" type="tel" name="telpj" id="telpj" class="form-control input-lg" placeholder="(21) 2629-5000" tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Telefone Celular da Instituição</label>
+                                            <input required size="15" maxlength="15" type="tel" name="telpj2" id="telpj2" class="form-control input-lg" placeholder="(00)00000-0000" tabindex="6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-xs-10 col-sm-3 col-md-3">
+                                        <label>Selecione o Estado:</label>
+                                        </br>
+                                        <select name="estado" id="estado" class="form-control" tabindex="9">
+                                            <option value="rj">RJ</option>
+                                            <option value="ac">AC</option>
+                                            <option value="al">AL</option>
+                                            <option value="ap">AP</option>
+                                            <option value="am">AM</option>
+                                            <option value="ba">BA</option>
+                                            <option value="ce">CE</option>
+                                            <option value="df">DF</option>
+                                            <option value="es">ES</option>
+                                            <option value="go">GO</option>
+                                            <option value="ma">MA</option>
+                                            <option value="mt">MT</option>
+                                            <option value="ms">MS</option>
+                                            <option value="mg">MG</option>
+                                            <option value="pa">PA</option>
+                                            <option value="pb">PB</option>
+                                            <option value="pr">PR</option>
+                                            <option value="pe">PE</option>
+                                            <option value="pi">PI</option>
+                                            <option value="rn">RN</option>
+                                            <option value="rs">RS</option>
+                                            <option value="ro">RO</option>
+                                            <option value="rr">RR</option>
+                                            <option value="sc">SC</option>
+                                            <option value="sp">SP</option>
+                                            <option value="se">SE</option>
+                                            <option value="to">TO</option>
+                                        </select>    
+                                    </div>
+                                    <div class="col-xs-12 col-sm-9 col-md-9">
+                                        <div class="form-group">
+                                            <label>Digite a Cidade</label>
+                                            <input required size="40" maxlength="30" type="text" name="cidade" id="cidade" class="form-control input-lg" placeholder="Niterói" tabindex=""/>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Endereço</label>
+                                    <input required size="63" maxlength ="50" type="text" name="endereco" id="endereco" class="form-control input-lg" placeholder="Icaraí, R. Miguel de Frias, 9" tabindex=""/>
+                                </div>
+
+                                <div class="form-group">
+                                    <label>Referência</label>
+                                    <input required size="63" maxlength ="50" type="text" name="referencia" id="referencia" class="form-control input-lg" placeholder="Perto da ponte universitária (OPCIONAL)" tabindex=""/>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <label>Horário de abertura do local</label>
+                                        <div class="form-group">
+                                            <input required type="time" id="abertura" name="abertura" class="form-control input-lg" tabindex="5">
+                                        </div>
+                                    </div>
+                                    <div class="col-xs-12 col-sm-6 col-md-6">
+                                        <div class="form-group">
+                                            <label>Até as</label>
+                                            <input required type="time" id="fechamento" name="fechamento" class="form-control input-lg" tabindex="6">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12 col-sm-6 col-md-6">
+                                    <div class="form-group">
+                                        <label>O que a Instituição precisa:</label>
+                                        </br>
+                                        <textarea placeholder="Ex: Precisamos de alimentos não perecíveis, papel tamanho a4 e carteiras! " tabindex="15" rows="9" cols="100"></textarea>
+                                    </div>
+                                </div>
+
+                                    <!--BOTÕES DO HELL-->
+									<form id = "botoes2">
+                                    <div class="row">  
+                                        
+                                            <div class="">
+                                                <input type="submit" value="Enviar" id="enviar2" class="form-control btn btn-success btn-block btn-lg" tabindex="7">
+                                            </div>
+                                                                                
+                                            <div class="">
+                                                <input type="submit" value="Limpar" id="limpar2" class="form-control btn btn-warning btn-block btn-lg" tabindex="7">
+                                            </div>
+                                                                                
+                                            <div class="">
+                                                <input type="submit" value="Cancelar" id="cancelar2" class="form-control btn btn-danger btn-block btn-lg" tabindex="7">
+                                            </div>
+                                       </form> 
+                                    </div>
+                                
+                                
+                            </fildset>
+                        </form>
+                    </div>
+                </div>
+            </section>
+			<!--FIM CONTEÚDO-->
+
+
+			<!--COMEÇO RODAPÉ-->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-10 col-lg-offset-1 text-center">
+                    <h4><strong>HelpCademy</strong>
+                    </h4>
+                    <p>Av. Rio Branco
+                        <br>Rio de Janeiro - RJ, 90210</p>
+                    <ul class="list-unstyled">
+                        <li><i class="fa fa-phone fa-fw"></i> (021) 96690-8001</li>
+                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:helpcademy@gmail.com">helpcademy@gmail.com</a>
+                        </li>
+                    </ul>
+                    </br>
+                    <ul class="list-inline">
+                        <li>
+                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
+                        </li>
+                        <li>
+                            <a href="#"><i class="fa fa-github fa-fw fa-3x"></i></a>
+                        </li>
+                    </ul>
+                    <hr class="small">
+                    <p class="text-muted">Copyright &copy; HelpCademy 2016</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+			<!--FIM RODAPÉ-->
+        
+        <!-- JavaScript -->
+        
+        <script>
+        // Fecha o Menu
+        $("#menu-close").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        // Abre o Menu
+        $("#menu-toggle").click(function(e) {
+            e.preventDefault();
+            $("#sidebar-wrapper").toggleClass("active");
+        });
+        </script>
+	
+	</body>
+</html>
