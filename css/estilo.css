@@ -255,8 +255,7 @@ form > h1{
 	
 }
 tr{
-	border-style: solid;
-	border-color:black;
+	border-style: none;
 	font-weight:500px;
 	
 }
