@@ -256,6 +256,7 @@ form > h1{
 }
 tr{
 	border-style: none;
+	border-color:black;
 	font-weight:500px;
 	
 }
