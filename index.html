@@ -1,228 +1,179 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
 
-    <title>HelpCademy | Ajudando o Futuro</title>
+    <title>EcoTroca - Mude o Mundo e ganhe descontos</title>
 
-    <!-- Bootstrap -->
-    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
-    <!-- CSS -->
-    <link href="css/estilo.css" rel="stylesheet">
+    <!-- Custom Fonts -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
 
-    <!-- Fontes -->
-    <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-    
-    <!-- jQuery -->
-    <script src="js/jquery.js"></script>
+    <!-- Plugin CSS -->
+    <link href="vendor/magnific-popup/magnific-popup.css" rel="stylesheet">
 
-    <!-- JavaScript do Bootstrap -->
-    <script src="js/bootstrap.min.js"></script>
+    <!-- Theme CSS -->
+    <link href="css/creative.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
 
 </head>
 
-<body>
+<body id="page-top">
 
-    <!-- Menu -->
-    <a id="menu-toggle" href="#" class="btn botao-dark btn-lg toggle"><i class="fa fa-bars"></i></a>
-    <nav id="sidebar-wrapper">
-        <ul class="sidebar-nav">
-            <a id="menu-close" href="#" class="btn botao-light btn-lg pull-right toggle"><i class="fa fa-times"></i></a>
-            <li class="sidebar-brand">
-                <a href="#top" onclick=$("#menu-close").click();>MENU</a>
-            </li>
-            <li>
-                <a href="index.html" onclick=$("#menu-close").click();>Home</a>
-            </li>
-            <li>
-                <a href="cadajuda.html" onclick=$("#menu-close").click();>Cadastre Universidade</a>
-            </li>
-            <li>
-                <a href="universidades.html" onclick=$("#menu-close").click();>Encontre Universidades</a>
-            </li>
-            <li>
-                <a href="sobre.html" onclick=$("#menu-close").click();>Sobre Nós</a>
-            </li>
-            <li>
-                <a href="faleconosco.html" onclick=$("#menu-close").click();>Fale Conosco</a>
-            </li>
-        </ul>
+    <nav id="mainNav" class="navbar navbar-default navbar-fixed-top">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> Menu <i class="fa fa-bars"></i>
+                </button>
+                <a class="navbar-brand page-scroll" href="#page-top">EcoTroca</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a class="page-scroll" href="#about">O que é?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#portfolio">Como Funciona?</a>
+                    </li>
+                    <li>
+                        <a class="page-scroll" href="#contact">Contato</a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
     </nav>
 
-    <!-- Cabeçalho -->
-    <header id="top" class="header">
-        <div class="principal">
-            <h1>HelpCademy</h1>
-            <h2>Ajude a educação. Alia-se a HelpCademy.</h2>
-            <br>
-            <a href="#como-funciona" class="botao botao-dark btn-lg">Como Funciona?</a>
+    <header>
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading">Mude o mundo e ganhe com isso!</h1>
+                <hr>
+                <a href="#about" class="btn btn-primary btn-xl page-scroll">Saiba mais</a>
+            </div>
         </div>
     </header>
 
-    <!-- Breve Explicação -->
-    <section id="chamada" class="chamada">
+    <section class="bg-primary" id="about">
         <div class="container">
             <div class="row">
-                <div class="col-lg-12 text-center">
-                    <h2>Salvar a educação é salvar o Futuro!</h2>
-                    <p class="lead">Descubra mais sobre o trabalho da HelpCademy.</p>
-                </div>
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Como Funciona -->
-    <section id="como-funciona" class="como-funciona bg-primary">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-10 col-lg-offset-1">
-                    <h2><strong>COMO FUNCIONA</strong></h2>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4 col-sm-6">
-                            <div class="explicacao">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-university fa-stack-1x text-primary"></i>
-                                </span>
-                                <h3>
-                                <strong>Universidades </strong>
-                                </h3>
-                                <p>O universitário que perceber um problema na sua universidade, ele pode pedir ajuda na plataforma. Basta cadastrar as informações necessárias.</p>
-                                </br>
-                                <a href="#" class="btn botao-light">Cadastre sua universidade</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="explicacao">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-group fa-stack-1x text-primary"></i>
-                                </span>
-                                <h3>
-                                    <strong>Como Ajudar</strong>
-                                </h3>
-                                <p>Veja quais problemas as universidades estão enfrentando, e como você pode ajudar à solucioná-los.</p>
-                                </br>
-                                <a href="#" class="btn botao-light">Descubra como ajudar</a>
-                            </div>
-                        </div>
-                        <div class="col-md-4 col-sm-6">
-                            <div class="explicacao">
-                                <span class="fa-stack fa-4x">
-                                <i class="fa fa-circle fa-stack-2x"></i>
-                                <i class="fa fa-question text-primary"></i>
-                                </span>
-                                <h3>
-                                    <strong>Por Que Ajudar?</strong>
-                                </h3>
-                                <p>O futuro da sociedade depende dos jovens estudantes. Uma universidade funcionando adequadamente é fundamental para que tenham uma educação de qualidade.</p>
-                                <a href="http://migre.me/vElmz" class="btn botao-light">Reflita sobre o assunto</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">EcoTroca é a nova forma de fazer reciclagem!</h2>
+                    <hr class="light">
+                    <p class="text-faded">Aqui você recicla e ganha descontos na sua próxima compra em uma de nossas lojas parceiras!</p>
+                    <a href="#portfolio" class="page-scroll btn btn-default btn-xl sr-button">Cadastre-se</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Portfolio -->
-    <section id="exemplos" class="exemplos">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h2><strong>UNIVERSIDADES QUE PRECISAM DA SUA AJUDA</strong></h2>
-                    <hr class="medium">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="exemplo-item">
-                                <a href="#">
-                                    <img class="img-exemplo img-responsive" src="img/ufrj.png">
-                                </a>
+    <section class="no-padding" id="portfolio">
+        <div class="container-fluid">
+            <div class="row no-gutter popup-gallery">
+                <!--<h1 class="section-heading text-center bg-primary">COMO FUNCIONA?</h1>-->
+                <div class="col-lg-6 col-sm-9">
+                    <a href="img/loja.jpeg" class="portfolio-box">
+                        <img src="img/loja.jpeg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    COMERCIANTES
+                                </div>
+                                <div class="project-name">
+                                    Faça convênio com a futura maior rede de sustentabilidade brasileira para conquistar e fidelizar seus clientes, sem gastar nada. 
+                                </div>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="exemplo-item">
-                                <a href="#">
-                                    <img class="img-exemplo img-responsive" src="img/uerj.png">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="exemplo-item">
-                                <a href="#">
-                                    <img class="img-exemplo img-responsive" src="img/uff.jpg">
-                                </a>
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="exemplo-item">
-                                <a href="#">
-                                    <img class="img-exemplo img-responsive" src="img/ufrrj.jpg">
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#" class="botao botao-dark btn-lg">Veja o que elas precisam</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Rodapé -->
-    <footer>
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-10 col-lg-offset-1 text-center">
-                    <h4><strong>HelpCademy</strong>
-                    </h4>
-                    <p>Av. Rio Branco
-                        <br>Rio de Janeiro - RJ, 90210</p>
-                    <ul class="list-unstyled">
-                        <li><i class="fa fa-phone fa-fw"></i> (021) 96690-8001</li>
-                        <li><i class="fa fa-envelope-o fa-fw"></i> <a href="mailto:helpcademy@gmail.com">helpcademy@gmail.com</a>
-                        </li>
-                    </ul>
+                    </a>
                     <br>
-                    <ul class="list-inline">
-                        <li>
-                            <a href="#"><i class="fa fa-facebook fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-twitter fa-fw fa-3x"></i></a>
-                        </li>
-                        <li>
-                            <a href="#"><i class="fa fa-github fa-fw fa-3x"></i></a>
-                        </li>
-                    </ul>
-                    <hr class="small">
-                    <p class="text-muted">Copyright &copy; HelpCademy 2016</p>
+                    <br>
+                </div>
+                <div class="col-lg-6 col-sm-9">
+                    <a href="img/pessoas.jpeg" class="portfolio-box">
+                        <img src="img/pessoas.jpeg" class="img-responsive" alt="">
+                        <div class="portfolio-box-caption">
+                            <div class="portfolio-box-caption-content">
+                                <div class="project-category text-faded">
+                                    Category
+                                </div>
+                                <div class="project-name">
+                                    Project Name
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                    
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <aside class="bg-dark">
+        <div class="container text-center">
+            <div class="call-to-action">
+                <h3 id="citacao">"Se você tem metas para um ano. Plante arroz. </br>Se você tem metas para 10 anos. Plante uma árvore.</br> Se você tem metas para 100 anos, eduque uma criança. </br>Se você tem metas para 1000 anos, então preserve o meio ambiente."</h3>
+                <p>
+                <h3>-Confúcio</h3>
+                </p>
+            </div>
+        </div>
+    </aside>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-lg-offset-2 text-center">
+                    <h2 class="section-heading">Quer saber mais? </br>Entre em contato com a gente!</h2>
+                    <hr class="primary">
+                    <p>Tem dúvidas, sugestões ou críticas sobre o EcoTroca? <br>Entre em contato pelo nosso telefone ou email, que responderemos o mais rápido possível!</p>
+                </div>
+                <div class="col-lg-4 col-lg-offset-2 text-center">
+                    <i class="fa fa-phone fa-3x sr-contact"></i>
+                    <p>(21) 96476-8548</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+                    <p><a href="mailto:your-email@your-domain.com">ecotrocaa@gmail.com</a></p>
                 </div>
             </div>
         </div>
-    </footer>
+    </section>
 
-    <!-- JavaScript -->
-    <script>
-    // Fecha o Menu
-    $("#menu-close").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    // Abre o Menu
-    $("#menu-toggle").click(function(e) {
-        e.preventDefault();
-        $("#sidebar-wrapper").toggleClass("active");
-    });
-    </script>
+    <!-- jQuery -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.3/jquery.easing.min.js"></script>
+    <script src="vendor/scrollreveal/scrollreveal.min.js"></script>
+    <script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+
+    <!-- Theme JavaScript -->
+    <script src="js/creative.min.js"></script>
 
 </body>
 
