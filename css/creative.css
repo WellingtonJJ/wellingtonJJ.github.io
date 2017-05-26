@@ -417,5 +417,17 @@ body {
 
 #citacao {
     font-style: italic;
-    font-weight: bold
+    font-weight: bold;
 }
+
+.titulo{
+    text-align: center; font-weight: bolder; color: white;
+}
+
+.titulocf{font-weight: bolder;}
+
+#chamada1{top:20%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 70px; margin-left: -153px;}
+
+#chamada2{top:20%; position:absolute;z-index:4; left: 32%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 60px; margin-left: -133px;}
+
+.botao{top:60%; position:absolute;z-index:4; left: 55%; color:aliceblue; font-weight: 600; font-size: 20px; margin-left: -128px; color:white; background: green;}
