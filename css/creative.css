@@ -431,4 +431,11 @@ body {
 
 #chamada2{top:10%; position:absolute;z-index:4; left: 32%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 70px; margin-left: -133px;}
 
-.botao{top:70%; position:absolute;z-index:4; left: 55%; color:aliceblue; font-weight: 600; font-size: 20px; margin-left: -128px; color:white; background: green;}
+.botao{top:70%; position:absolute;z-index:4; left: 55%; color:aliceblue; font-weight: 600; font-size: 20px; margin-left: -128px; color:white; background: green; border: 2px solid green; -webkit-transition-delay: 0.2s; /* Safari */
+transition-delay: 0.2s;}
+
+.botao:hover, .botao:focus {
+  color: white;
+  background-color: transparent;
+  border: 2px solid white;
+}
