@@ -234,9 +234,9 @@ header .header-content .header-content-inner p {
 }
 .portfolio-box .portfolio-box-caption {
   color: white;
-  opacity: 0;
+  /*opacity: 0;*/
   display: block;
-  background: rgba(240, 95, 64, 0.6);
+  /*background: rgba(240, 95, 64, 0.6);*/
   position: absolute;
   bottom: 0;
   text-align: center;
@@ -420,16 +420,16 @@ body {
 
 #citacao {
     font-style: italic;
-    font-weight: bold
+    font-weight: bold;
 }
 
 .titulo{text-align: center; font-weight: bolder; color:#F05F40;}
 
 .titulocf{font-weight: bolder;}
 
-#chamada1{top:10%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 70px; margin-left: -153px;}
+#chamada1{top:10%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4.5em; margin-left: -153px;}
 
-#chamada2{top:10%; position:absolute;z-index:4; left: 32%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 70px; margin-left: -133px;}
+#chamada2{top:10%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4.5em; margin-left: -190px;}
 
 .botao{top:70%; position:absolute;z-index:4; left: 55%; color:aliceblue; font-weight: 600; font-size: 20px; margin-left: -128px; color:white; background: green; border: 2px solid green; -webkit-transition-delay: 0.2s; /* Safari */
 transition-delay: 0.2s;}
@@ -438,4 +438,8 @@ transition-delay: 0.2s;}
   color: white;
   background-color: transparent;
   border: 2px solid white;
+}
+
+.comofunciona {
+    background-color: #222222;
 }
