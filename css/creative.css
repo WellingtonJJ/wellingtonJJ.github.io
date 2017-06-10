@@ -427,9 +427,9 @@ body {
 
 .titulocf{font-weight: bolder;}
 
-#chamada1{top:10%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4.5em; margin-left: -153px;}
+#chamada1{top:10%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4em; margin-left: -153px;}
 
-#chamada2{top:10%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4.5em; margin-left: -190px;}
+#chamada2{top:10%; position:absolute;z-index:4; left: 50%; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4em; margin-left: -175px;}
 
 .botao{top:70%; position:absolute;z-index:4; left: 55%; color:aliceblue; font-weight: 600; font-size: 20px; margin-left: -128px; color:white; background: green; border: 2px solid green; -webkit-transition-delay: 0.2s; /* Safari */
 transition-delay: 0.2s;}
