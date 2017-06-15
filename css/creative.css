@@ -466,6 +466,7 @@ body {
     background-size: cover;
     padding-top: 50px;
     padding-bottom: 50px;
+    
 }
 
 .portfolio-box {
@@ -478,7 +479,11 @@ body {
   color: aliceblue;
   text-align: center;
   font-size: 22px;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 10%;
+  margin-bottom: 10%;
   padding: 25px;
+}
+
+.btcliente{
+    margin-top: 46px;
 }
