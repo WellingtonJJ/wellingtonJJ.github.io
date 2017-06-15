@@ -245,7 +245,7 @@ header .header-content .header-content-inner p {
   transform: translateY(-50%);
 }
 .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category,
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content {
   font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif;
   padding: 0 15px;
 }
@@ -254,7 +254,7 @@ header .header-content .header-content-inner p {
   font-weight: 600;
   font-size: 14px;
 }
-.portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+.portfolio-box .portfolio-box-caption .portfolio-box-caption-content  {
   font-size: 18px;
 }
 
@@ -262,7 +262,7 @@ header .header-content .header-content-inner p {
   .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-category {
     font-size: 16px;
   }
-  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content .project-name {
+  .portfolio-box .portfolio-box-caption .portfolio-box-caption-content  {
     font-size: 22px;
   }
 }
@@ -414,20 +414,26 @@ body {
 .titulocf{font-weight: bolder;}
 
 #chamada1 {
-    margin-top:20%;
     color:aliceblue; 
     box-shadow: 50px; 
     text-shadow: 30px; 
     font-weight: 600; 
     font-size: 4em;
-    width: 100%;
     text-align: center;
 }
 
-#chamada2{margin-top:20%; z-index:4; color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4em; width: 100%; text-align: center;}
+#chamada2{ color:aliceblue; box-shadow: 50px; text-shadow: 30px; font-weight: 600; font-size: 4em; text-align: center;}
 
-.botao{position: absolute; margin: 12em; color:aliceblue; font-weight: 600; font-size: 20px; color:white; background: green; border: 2px solid green; -webkit-transition-delay: 0.2s; /* Safari */
-transition-delay: 0.2s;}
+.botao {
+  color:aliceblue; 
+  font-weight: 600; 
+  font-size: 20px; 
+  color:white; 
+  background: green; 
+  border: 2px solid green; -webkit-transition-delay: 0.2s; /* Safari */
+  transition-delay: 0.2s;
+  margin-top: 15px;
+}
 
 .botao:hover, .botao:focus {
   color: white;
@@ -449,7 +455,8 @@ transition-delay: 0.2s;}
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 #cliente {
@@ -457,11 +464,21 @@ transition-delay: 0.2s;}
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    min-height: 600px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .portfolio-box {
     width: 100%;
     height: auto;
   
+}
+
+.project-name {
+  color: aliceblue;
+  text-align: center;
+  font-size: 22px;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  padding: 25px;
 }
