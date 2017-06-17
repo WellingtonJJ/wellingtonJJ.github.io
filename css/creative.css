@@ -487,3 +487,9 @@ body {
 .btcliente{
     margin-top: 46px;
 }
+
+@media screen and (min-width:970px) {
+    #cliente, #comerciante {
+        height:575px;
+    }
+}
